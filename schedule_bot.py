@@ -7,7 +7,7 @@ st.set_page_config(page_title="직장인 업무 스케줄링 챗봇", layout="ce
 st.title("📅 직장인 업무 스케줄링 챗봇")
 
 # OpenAI API 키 설정 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "OPENAPI_API_KEY"  # 환경 변수나 비밀로 저장된 키 사용 권장
 openai.api_key = OPENAI_API_KEY
 
 # 대화 상태 및 업무 일정 저장

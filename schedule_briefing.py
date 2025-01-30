@@ -4,7 +4,7 @@ import google.generativeai as genai
 from collections import deque
 
 # Securely retrieve API key
-my_api_key = "AIzaSyDC3iSQUNqfLbgZOYMoEjbL9H7vzjpJBP0"  # Use environment variable or secrets
+my_api_key = "GEMINI_API_KEY"  # Use environment variable or secrets
 if not my_api_key:
     st.error("Error: Gemini API key not found.")
 else:
