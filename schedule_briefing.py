@@ -2,16 +2,21 @@ import streamlit as st
 import os
 import google.generativeai as genai
 from collections import deque
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Securely retrieve API key
-my_api_key = "GEMINI_API_KEY"  # Use environment variable or secrets
+my_api_key =  os.getenv("CHATBOT_API_KEY")# Use environment variable or secrets
 if not my_api_key:
     st.error("Error: Gemini API key not found.")
 else:
     genai.configure(api_key=my_api_key)
 
 # Initialize Gemini model
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-pro')
+
+
 chat_session = model.start_chat(history=[])  # Start chat session
 
 # Initialize session state

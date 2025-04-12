@@ -1,4 +1,4 @@
 Scheduler Agent (Daily Briefing) with Gemini API
 
 schedule_bot.py (Chatbot style scheduler utilize openai api)
-schedule_briefing.py (Daily briefinf utilize gemini api)
+schedule_briefing.py (Daily briefing utilize gemini api)
