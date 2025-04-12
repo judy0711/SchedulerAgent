@@ -37,11 +37,13 @@ if not st.session_state.started:
     #     st.session_state.started = True
     #     st.rerun()
 
-    # Centered Start Button
-    if st.button("🚀 Start"):
-        st.session_state.started = True
-        st.rerun()
-    
+    col1, col2, col3, col4, col5 = st.columns([1,1, 1,1,1])
+    with col3 : 
+        # Start Button
+        if st.button("Start"):
+            st.session_state.started = True
+            st.rerun()
+        
 else:
     # Display chat history
     for message in st.session_state.messages:
